@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon&display=swap');
+
+@font-face {
+    font-family: 'simpsonsFont';
+    src: url('font/SimpsonsFont.otf');
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 10px 10px 10px;
+    font-family: 'simpsonsFont', sans-serif;
+    color: #FFD90F;
+    
+}
+
+body h1 {
+    font-size: 4.5em;
+    margin: 0 0 5px 0;
+    text-shadow: -3px 3px 0px #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+
+
+
+}
+
+.chalkboard {
+    background-color: darkgreen;
+    border: 8px solid #654321;
+    border-radius: 3px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Coming Soon', cursive;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+
+}
+
+.stats {
+display: flex;
+flex-direction: row;
+font-weight: bold;
+}
+
+.score
+{
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1.5em;
+}
+
+.status {
+    flex-basis: 50%;
+    text-align: right;
+    padding-right: 10%;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20%;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 5% 5% 5%;
+}
+
+.answer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px 0 0 5px;
+    padding: 5px;
+}
+
+#answer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.buttonStyle {
+    background-color: #614ED9;
+    color: #FFD90F;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    font-family: 'simpsonsFont', sans-serif;
+    padding: 10px;
+    text-shadow: -3px 3px 0px #000000;
+    box-shadow: 3px 3px 0px #FFD90F;
+    outline: 0px;
+}
+
+.buttonStyle:active {
+
+    box-shadow: 1px 1px 0px #FFD90F;
+    outline: 0px;
+    transform: translate(2px, 2px);
+}
+
+#simpsonsStart {
+
+    align-self: center;
+    width: 90%;
+    max-width: 573px;
+}
+
+@media screen and (max-width: 600px) {
+    body h1 {
+        font-size: 3em;
+    }
+
+    .answer {
+        flex-direction: column;
+    }
+
+    #TV {
+        align-self: center;
+    }
+
+    .chalkboard {
+        font-size: 1em;
+    }
+} 
+
+
