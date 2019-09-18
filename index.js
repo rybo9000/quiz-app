@@ -1,5 +1,5 @@
 
-    const QUESTIONS = [
+    const QUESTIONS2 = [
         {
             question : "The Simpsons originally appeared as a short on what TV show?",
             correct : "The Tracy Ullman Show",
