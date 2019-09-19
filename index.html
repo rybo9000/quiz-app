@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simpsons Trivia</title>
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="fav/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="fav/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="fav/apple-touch-icon-72x72.png" />
@@ -25,28 +26,28 @@
         <meta name="msapplication-square150x150logo" content="fav/mstile-150x150.png" />
         <meta name="msapplication-wide310x150logo" content="fav/mstile-310x150.png" />
         <meta name="msapplication-square310x310logo" content="fav/mstile-310x310.png" />
-        
-
     </head>
     <body>
-        <h1>Simpsons Trivia</h1>
+        <header>
+            <h1>Simpsons Trivia</h1>
+        </header>
         <div class="container">
+            <section>
             <div class="chalkboard">
-                <div class="stats">
-                    <div class="score">Score: <span id="score">0</span></div><div class="status"><span id="question"></span> of <span id="total">1</span></div>
+                    <div class="stats">
+                        <div class="score">Score: <span id="score">0</span></div><div class="status"><span id="question"></span> of <span id="total">1</span></div>
+                    </div>
+                    <div class="mainContent">
+                        <img src="img/theSimpsonsStart.png" alt="Banner for the Simpsons Quiz" id="simpsonsStart">
+                        <p>Do you think you are a Simpsons Expert?  Click the button below to find out!</p> 
+                        <form>
+                            <nav><button type="submit" id="start" class="buttonStyle">Start</button></nav>
+                        </form>
+                    </div>
                 </div>
-                <div class="mainContent">
-                    <img src="img/theSimpsonsStart.png" id="simpsonsStart">
-                    <p>Do you think you are a Simpsons Expert?  Click the button below to find out!</p> 
-                    <form>
-                        <button type="submit" id="start" class="buttonStyle">Start</button>
-                    </form>
-  
-
-                </div>
-            </div>
+            </section>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="index.js"></script>
     </body>
 </html>
